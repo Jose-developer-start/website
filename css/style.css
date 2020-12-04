@@ -3,25 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1,h2,h3{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-a{
-   font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
+h1,h2,h3{font-family: 'Source Sans Pro', sans-serif;}
+a{font-family: 'Roboto', sans-serif;font-weight: 700;}
 p{
     font-size: 18px;
     line-height: 25px;
     font-family: 'Roboto', sans-serif;
 }
 .title-main{
-    font-size: 100px;
-    color: #1ADEE8;
+    font-size: 80px;
+    color: #134649;
     font-weight:900;
 }
 .title-description{
-    color: #205;
+    color: #382a4d;
 }
 #colors{
     height: 150px;
@@ -29,12 +24,12 @@ p{
     background-color: black;
     margin-top: 170px;
     position: fixed;
-    
+    display: none;
     z-index: 1;
 }
 
 #colors .color1{
-    background-color: blue;
+    background-color: green;
     height: 30px;
     width: 30px;
     margin: 0 auto;
@@ -61,10 +56,6 @@ p{
     margin: 0 auto;
     margin-top: 6px;
 }
-/*Padding*/
-#content1,#content2,#content3,#content4,#content5{
-    padding: 20px 60px;
-}
 
 /*padding*/
 #content1{
@@ -80,16 +71,17 @@ p{
     width: 100%;
     position: absolute;
     background-color: cyan;
-    opacity: 0.3
+    opacity: 0.4
 }
 #content1 .information{
     position: relative;
 }
 /*Section2*/
 #content2{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: darkcyan;
+    z-index: 1;
 }
 .card{
     height: 400px;
@@ -110,16 +102,45 @@ p{
 }
 /*Section3*/
 #content3{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: teal;
+    position: relative;
 }
 #content4{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #071b27;
 }
 #content5{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
+
+#content5 .redes{
+    width: 80px;
+}
+
+@media (min-width:600px){
+    #content2{
+        height: 100vh;
+    }
+    #content3{
+        height: 100vh;
+    }
+    #content4{
+        height: 100vh;
+    }
+    #content5{
+        height: 100vh;
+    }
+}
+
+
+
+
+
+
+
+
+
